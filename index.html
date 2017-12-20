@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+      $("button").click(function(){
+            $("#chgicon").attr("src",$("#t1").val()+"_"+$("#t2").val()+"_"+$("#t3").val()+".jpg");
+      });
+});
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    
+    
+</head>
+<body>
+  
+   
+       <br>流域 
+       <select name="s1" id=t1>
+           <option value=1>曾文溪</option>
+       </select>   
+    </br>
+       
+        <br>世紀末TOP Event
+       <select name="s2" id=t2>
+           <option value=1>1</option>
+           <option value=2>2</option>
+           <option value=3>3</option>
+       </select>      
+       </br>
+       <br>衝擊展示
+       <select name="s3" id=t3>
+           <option value=1>颱風路徑</option>
+           <option value=2>累積時雨量</option>
+           <option value=3>總降雨量</option>
+           <option value=4>淹水</option>
+       </select>      
+       </br>   
+       
+       <br/><button>送出查詢</button><br/><br/>
+       
+   <img src="下載.png"  id="chgicon"/>
+   
+</body>
+</html>
